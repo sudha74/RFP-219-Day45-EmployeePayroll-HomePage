@@ -39,7 +39,7 @@ const save = () => {
 const createAndUpdateStorage = function (employeePayrollData) {
     let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
     if (employeePayrollList != undefined) {
-        employeePayrollList = employeePayrollList.push(employeePayrollData)
+        employeePayrollList.push(employeePayrollData)
     } else {
         employeePayrollList = [employeePayrollData] //need to ask in doubt session
     }
